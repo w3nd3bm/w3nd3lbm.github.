@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aceita</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <div class="box">
+        <p>Aceita sair comigo?</p>
+        <div class="button-container">
+            <button>
+                <a href="https://youtu.be/PnAMEe0GGG8&t=34s">sim</a>
+            </button>
+            <button id="no">não</button>
+        </div>
+    </div>
+</body>
+<script>
+    let button = document.getElementById('no');
+    let height = window.innerHeight - 50;
+    let width = Window.innerHeight - 50;
+
+    button.addEventListener('mouseover', function () {
+        button.style.position = "absolute";
+        button.style.top = Math.random() * height + "px";
+        button.style.left = Math.random() * width + "px";
+    })
+</script>
+</html>
